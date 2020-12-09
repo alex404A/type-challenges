@@ -1,4 +1,4 @@
-import { Equal, Expect } from '@type-challenges/utils'
+import { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<MyReadonly2<Todo1>, Readonly<Todo1>>>,

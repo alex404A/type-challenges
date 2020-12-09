@@ -1,5 +1,5 @@
 
-import { Equal, Expect } from '@type-challenges/utils'
+import { Equal, Expect } from '../../utils'
 
 SimpleVue({
   data() {
