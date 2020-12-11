@@ -1,6 +1,8 @@
-import { Equal, Expect } from '../../utils'
+import { Equal, Expect } from "../../utils";
+
+type Pop<T extends any[]> = T extends [...infer F, infer _] ? F : never;
 
 type cases = [
   Expect<Equal<Pop<[3, 2, 1]>, [3, 2]>>,
-  Expect<Equal<Pop<['a', 'b', 'c', 'd', ]>, ['a', 'b', 'c']>>,
-]
+  Expect<Equal<Pop<["a", "b", "c", "d"]>, ["a", "b", "c"]>>
+];
